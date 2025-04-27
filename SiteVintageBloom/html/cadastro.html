@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Tela de Cadastro</title>
+        <meta charset="UTF-8"/> 
+        
+        <link rel="stylesheet" type="text/css" href="../css/cadastro.css">
+
+        <script src="../js/cadastro.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </head>
+    <body>
+        <header class="barra">
+            <div class="logo">
+                <img src="../imagens/logo.jpg" alt="Logo" />
+            </div>
+            <div class="links">
+                <a href="../html/home.html">Início</a>
+                <a href="../html/Produtos.html">Produtos</a>
+                <a href="../html/Contato.html">Contato</a>
+            </div></header>
+        <div class="container-principal">
+            <div class="cadastro">
+                <form id="form-login" onsubmit="logar(event)">
+                    <h3>Cadastro</h3>
+                    <h5>Entre com usuário "admin" e senha "12345"</h5>
+                    
+                    <input type="text" placeholder="Usuário:" id="usuario" required="true" minlength="3" maxlength="15"/>
+
+                    <input type="password" placeholder="Senha:" id="senha" required="true" minlength="4" maxlength="15"/>
+                    
+                    <input type="submit" value="Cadastrar" onclick="logar();return false"/>
+
+                    <p>Já possui cadastro? <a href="../html/Login.html"> Faça login!</a></p>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
